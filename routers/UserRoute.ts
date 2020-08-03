@@ -25,6 +25,7 @@ export function UserRoutes(router: Router) {
             }
             const {value} = await ctx.request.body();
 
+            // Generate JWT
             const jwt = await controller.login(value.lastName, value.password);
             if (!jwt) {
                 return BadRequest(ctx);

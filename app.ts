@@ -1,6 +1,6 @@
 import {Application, Router} from "https://deno.land/x/oak/mod.ts"
 import {DatabaseController} from "./controllers/Database.ts"
-import {UserRoutes, PrivateRoutes} from "./routers/UserRoute.ts"
+import {UserRoutes, PrivateRoutes} from "./routers/index.ts"
 
 const app = new Application()
 const router = new Router()

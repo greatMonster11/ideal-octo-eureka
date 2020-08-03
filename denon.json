@@ -1,7 +1,7 @@
 {
     "$schema": "https://deno.land/x/denon/schema.json",
     "env": {
-        "SECRET": "ADRIEN_IS_THE_BEST_AUTHOR_ON_MEDIUM"
+        "SECRET": "I am the best"
     },
     "scripts": {
         "start": {

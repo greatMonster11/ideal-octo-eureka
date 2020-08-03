@@ -39,7 +39,8 @@ export class UserController {
         if (!user || !(await bcrypt.compare(password, user.password))) {
             return false
         }
-        // TODO generate JWT
+        // Call our new static method
+        return User.generateJwt(user.id)
     }
 
 }
